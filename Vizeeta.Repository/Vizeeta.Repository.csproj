@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BaseSpecification\**" />
+    <Compile Remove="ISpecification\**" />
+    <Compile Remove="SpecificationEvaluator\**" />
+    <EmbeddedResource Remove="BaseSpecification\**" />
+    <EmbeddedResource Remove="ISpecification\**" />
+    <EmbeddedResource Remove="SpecificationEvaluator\**" />
+    <None Remove="BaseSpecification\**" />
+    <None Remove="ISpecification\**" />
+    <None Remove="SpecificationEvaluator\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IRepository\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vizeeta.Domain\Vizeeta.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
